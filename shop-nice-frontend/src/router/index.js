@@ -10,6 +10,13 @@ const router = createRouter({
       path: '/',
       name: 'dashboard',
       component: DashboardView,
+      children : [
+        {
+          path : '',
+          name : 'popular',
+          component: () => import ('../views/PopularProductsView.vue'),
+        }
+      ]
     },
     {
       path : '/login',
@@ -20,8 +27,7 @@ const router = createRouter({
       path: '/register',
       name : 'register',
       component : RegisterComponent,
-    },
-    /*
+    },    /*
     {
       path: '/about',
       name: 'about',
@@ -31,6 +37,16 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     */
+    {
+      path: '/admin-panel',
+      name : 'AdminPanel',
+      component : () => import ('../views/AdminPanelView.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component : () => import('../views/NotFoundView.vue'),
+    },
   ],
 })
 
