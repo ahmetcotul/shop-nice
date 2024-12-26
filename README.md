@@ -11,6 +11,8 @@ Full Stack E-Commerce Shopping Website with Laravel and VueJS
 ![](./shop-nice-frontend/screenshots/shopnicefront-afterloggedin.png)
 ### **404 Page**
 ![](./shop-nice-frontend/screenshots/shopnicefront-404page.png)
+### **Admin After Logged In**
+![](./shop-nice-frontend/screenshots/shopnicefront-adminafterloggedin.png)
 ### **Admin Panel**
 ![](./shop-nice-frontend/screenshots/shopnicefront-adminpanel.png)
 
